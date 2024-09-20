@@ -2,7 +2,7 @@ const { TodoItem } = require('../models');
 
 // create
 exports.createTodoItem = async (req, res) => {
-  res.status(201).json(req.params);
+  res.status(201).json(req.params.userId);
   // try {
   //   await TodoItem.create({
   //     ...req.body,
